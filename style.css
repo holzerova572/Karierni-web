@@ -1,0 +1,133 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+
+
+
+
+
+
+/*
+ **************************************
+	HEADER
+ **************************************
+*/
+.header {
+    background-image: url(images/cover-team.jpg);
+    padding: 200px;
+}
+
+.header h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+    color: #FFF;
+    font-size: 68px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.hilightred {
+background-image: linear-gradient(transparent 72%, #ff6464 62%, #ff6464 82%, transparent 82%);
+}
+
+.transarrow {
+    text-align: center;
+    height: 0;
+    position: relative;
+}
+
+.transarrow::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    top: -40%;
+    left: 50%;
+    margin-left: -2px;
+    margin-top: 130px;
+    background-color: #f33;
+}
+
+div.transarrow::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin-left: -8px;
+    margin-top: 215px;
+    border-left: 4px solid #f33;
+    border-bottom: 4px solid #f33;
+    transform: rotate(-45deg);
+}
+
+/*
+ **************************************
+	MENU
+ **************************************
+*/
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.menu__item {
+	margin: 0;
+	padding: 0;
+}
+
+
+.menu__link {
+	display: block;
+	padding: 5px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+
+.menu__link:hover {
+	border-bottom: 3px solid #ff3333;
+}
+
+
+
+
+
+/*
+ **************************************
+	ABOUT - o nás
+ **************************************
+*/
+.about {
+    background-image: url(images/mrizka-cut.png);
+    
+}
+
+/*
+ **************************************
+	FOOTER
+ **************************************
+*/
+
+.footer__grid {
+    color: #b9b9b9;
+    background-color: #333333;
+    min-height: 80px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}

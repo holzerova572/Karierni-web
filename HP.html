@@ -1,37 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!-- hlavička a menu -->
-
-<header class="header">
-
-<div>
-    <a class="menu__logo" href="HP.html" >Kariérní web LQD</a>
-</div>
-
-    <nav class="menu">
-		<ul class="menu__list">
-			<li class="menu__item"><a href="onas.html" class="menu__link">O nás</a></li>
-			<li class="menu__item"><a href="pozice.html" class="menu__link">Otevřené pozice</a></li>
-			<li class="menu__item"><a href="jakfungujeme.html" class="menu__link">Jak fungujeme</a></li>
-			<li class="menu__item"><a href="https://www.lqd.cz/" class="menu__link">Firemní web</a></li>
-			<li class="menu__item"><a href="kontakt.html" class="menu__link">Kontakt</a></li>
-		</ul>
-	</nav>
-    
-<h1><span class="hilightred">Kariérní</span> web LQD</h1>
-
-<div class="transarrow"></div>
-
-</header>
+---
+layout: mylayouts.njk
+title: O nás
+---
 
 <!-- O nás obrázek -->
 <section class="about">
@@ -57,64 +27,56 @@
     </div>
 </div>
 </section>
+<!-- Konec O nás -->
 
 <!-- jak to u nás vypadá -->
 
 <section class="gallery">
 <h1>Galerie</h1>
 
-    <div class="gallery__grid">
-        <img class="gallery__item" src="#" alt="">
-        <img class="gallery__item" src="#" alt="">
-        <img class="gallery__item" src="#" alt="">
-        <img class="gallery__item" src="#" alt="">
-       
-    </div>
+    <!-- Required Core stylesheet -->
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+<!-- Optional Theme stylesheet -->
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
 </section>
-knihovna fotek
 
-<!-- patička -->
-<footer class="footer">
-    <div class="footer__grid">
-        <div class="footer__grid-column">
-            <h2>Sídlo firmy</h2>
-            <p>Liquid Design s.r.o.<br>
-             Josefská 15, 602 00 Brno
-            </p>
-        </div>
-        <div class="footer__grid-column">
-            <h2>Kontakt</h2>
-            <p>
-                <span class="footer__title">Telefon:</span><br>
-                +420 123 456 789
-            </p>
-            <p>
-                <span class="footer__title">E-mail:</span><br>
-                <a href="mailto:info@lqd.cz">info@lqd.cz</a>
-            </p>
-        </div>  
+<div class="glide">
+    <div data-glide-el="track" class="glide__track">
+      <ul class="glide__slides">
+        <li class="glide__slide"><img src="Images/DSC05917.jpg" alt="my v kanclu"></li>
+        <li class="glide__slide"><img src="Images/DSC05946.jpg" alt="nas kancl"></li>
+        <li class="glide__slide"><img src="Images/DSC05967.jpg" alt="nas kancl"></li>
+      </ul>
+    </div>
+  
 
-        <div class="box___social">
-
-            <div>
-                <a href="https://www.facebook.com/lqdcz" rel="nofollow" target="_blank" style="color:#579aff">
-                <i class="fa fa-facebook-square"></i>Facebook</a>
-            </div>
-            <div>
-                <a href="https://twitter.com/lqdcz" rel="nofollow" target="_blank" style="color:#58e0ff">
-                <i class="fa fa-twitter-square"></i>Twitter</a>
-            </div>
-            <div>
-                <a href="https://www.instagram.com/lqdcz/" rel="nofollow" target="_blank" style="color:#ffa2a2">
-                <i class="fa fa-instagram"></i>Instagram</a>
-            </div>
-            
+    <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
     </div>
 
-    <div class="footer__copyright">
-        &copy;2022, Liquid Desing s.r.o.
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+    <button class="glide__bullet" data-glide-dir="=0"></button>
+    <button class="glide__bullet" data-glide-dir="=1"></button>
+    <button class="glide__bullet" data-glide-dir="=2"></button>
     </div>
-</footer>
+</div>
 
-</body>
-</html>
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+<script>
+  new Glide('.glide' , {
+      autoplay: 2000,
+      gap: 10,
+      type: 'carousel'
+  }).mount()
+</script>
+
+
+
+  
+    
+ 
+
+<!-- konec jak to u nás vypadá -->

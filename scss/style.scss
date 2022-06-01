@@ -1,6 +1,9 @@
-$barva: black;
-$pismo: Georgia, serif;
-$velikost-pisma: 16px;
+$cerna: #333;
+$seda: #b9b9b9;
+$bila:#FFF;
+$cervena:#ff6464;
+$font: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+$font-size: 16px;
 $spacer: 20px;
 
 //------------------------------------------------//
@@ -20,23 +23,23 @@ html { box-sizing: border-box; }
  **************************************
 */
 .header {
-    background-image: url(images/cover-team.jpg);
+    background-image: url(/Images/cover-team.jpg);
     padding: 200px;
+    margin: 0;
 }
 
 .header h1 {
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: 20px;
+    font-family: $font;
 	font-weight: bold;
-    color: #FFF;
+    color: $bila;
     font-size: 68px;
     font-weight: 700;
     margin-bottom: 50px;
 }
 
 .hilightred {
-background-image: linear-gradient(transparent 72%, #ff6464 62%, #ff6464 82%, transparent 82%);
+background-image: linear-gradient(transparent 72%, $cervena 62%, $cervena 82%, transparent 82%);
 }
 
 .transarrow {
@@ -55,7 +58,7 @@ background-image: linear-gradient(transparent 72%, #ff6464 62%, #ff6464 82%, tra
     left: 50%;
     margin-left: -2px;
     margin-top: 130px;
-    background-color: #f33;
+    background-color: $cervena;
 }
 
 div.transarrow::after {
@@ -67,8 +70,8 @@ div.transarrow::after {
     height: 16px;
     margin-left: -8px;
     margin-top: 215px;
-    border-left: 4px solid #f33;
-    border-bottom: 4px solid #f33;
+    border-left: 4px solid $cervena;
+    border-bottom: 4px solid $cervena;
     transform: rotate(-45deg);
 }
 
@@ -98,15 +101,15 @@ div.transarrow::after {
 .menu__link {
 	display: block;
 	padding: 5px;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: 18px;
+	font-family: $font;
+	font-size: $font-size;
 	font-weight: bold;
 	text-decoration: none;
 	color: white;
 }
 
 .menu__link:hover {
-	border-bottom: 3px solid #ff3333;
+	border-bottom: 3px solid $cervena;
 }
 
 
@@ -119,13 +122,13 @@ div.transarrow::after {
  **************************************
 */
 .about {
-    background-image: url(images/mrizka-cut.png);
+    background-image: url(/Images/mrizka-cut.png);
     
 }
 
-.glide__slide img {
+.glide__slides img {
     width: 100%;
-    height: 50px !important;
+   height: 800px !important;
 }
 
 /*
@@ -134,8 +137,8 @@ div.transarrow::after {
  **************************************
 */
 
-.footer__grid {
-    color: #b9b9b9;
-    background-color: #333333;
-    background-size: cover;
+.footer {
+    color: $seda;
+    background-color: $cerna;
+    margin: 0;
 }

@@ -14,7 +14,9 @@
 <header class="header">
 
 <div>
-    <a class="menu__logo" href="/" >Kariérní web LQD</a>
+<a class="logo" href="/" >
+<img src="/Images/logo-white.svg" alt="Kariérní web" class="logo">
+</a>
 </div>
 
     <nav class="menu">
@@ -27,10 +29,12 @@
 		</ul>
 	</nav>
 
+<h1><span class="hilightred">Kariérní</span> web LQD</h1>
+
 <div class="transarrow"></div>
 </header>
     
-<h1><span class="hilightred">Kariérní</span> web LQD</h1>
+
 
 
 
@@ -38,6 +42,7 @@
 
 
 <!-- kontakt -->
+<section class="about">
 <h1>Kde nás najdeš</h1>
 <div class="kontaktaddress">
 <div class="addressdetails1">
@@ -84,11 +89,46 @@ Firma je vedená u Krajského soudu Brno v oddíle C, vložce číslo 60737.
     </div>
 </div>
 
+</section>
+<!-- kontaktni formular -->
+
 <div class="kontaktformular">
-    
+
+    <h2>Napiš nám</h2>
+<div class="form">    
+<label for="text"></label>
+<input type="text" name="jmeno" id="jmeno" size="20" maxlength="20" placeholder="Tvoje jméno" autofocus required>
+
+<label for="email"></label>
+<input type="email" name="email" id="email" size="20" maxlength="20" placeholder="Tvůj e-mail" autofocus required>
+
+
+<label for="telefon"></label>
+<input type="tel" name="telefon" id="telefon" size="20" maxlength="20" placeholder="Tvůj mobil" autofocus required>
+</div>
+
+<div class="form">
+<label for="text"></label>
+<textarea name="adresa" id="adresa" cols="30" rows="10" placeholder="Tvoje zpráva"></textarea>
+
+
+<input type="checkbox" name="souhlas" id="souhlas" value="ano" required>
+<label for="souhlas">Souhlasím se zpracováním osobních údajů</label>
+
+
+
+<input type="submit" name="tlacitko" value="Odeslat">
+
+
+
 
 
 </div>
+<!-- kontaktni formular konec -->
+
+    
+
+
 
 <!-- konec kontakt -->
 
@@ -102,23 +142,16 @@ Firma je vedená u Krajského soudu Brno v oddíle C, vložce číslo 60737.
     <div class="footer__grid">
         <div class="footer__grid-column">
             <h2>Sídlo firmy</h2>
-            <p>Liquid Design s.r.o.<br>
-             Josefská 15, 602 00 Brno
-            </p>
+            <p>Liquid Design s.r.o.<br>Josefská 15, 602 00 Brno</p>   
         </div>
+
         <div class="footer__grid-column">
             <h2>Kontakt</h2>
-            <p>
-                <span class="footer__title">Telefon:</span><br>
-                +420 123 456 789
-            </p>
-            <p>
-                <span class="footer__title">E-mail:</span><br>
-                <a href="mailto:info@lqd.cz">info@lqd.cz</a>
-            </p>
+            <p class="footer__title">Telefon: +420 123 456 789</p>
+            <p class="footer__title">E-mail: <a href="mailto:info@lqd.cz">info@lqd.cz</a></p>
         </div>  
 
-        <div class="box___social">
+        <div class="footer___social">
 
             <div>
                 <a href="https://www.facebook.com/lqdcz" rel="nofollow" target="_blank" style="color:#579aff">
@@ -132,12 +165,15 @@ Firma je vedená u Krajského soudu Brno v oddíle C, vložce číslo 60737.
                 <a href="https://www.instagram.com/lqdcz/" rel="nofollow" target="_blank" style="color:#ffa2a2">
                 <i class="fa fa-instagram"></i>Instagram</a>
             </div>
+
+            <div class="footer__copyright">
+             &copy;2022, Liquid Desing s.r.o.
+            </div> 
+        </div> 
             
     </div>
 
-    <div class="footer__copyright">
-        &copy;2022, Liquid Desing s.r.o.
-    </div>
+    
 </footer>
 
 </body>

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -45,7 +44,7 @@ html {
   top: -40%;
   left: 50%;
   margin-left: -2px;
-  margin-top: 130px;
+  margin-top: 80px;
   background-color: #ff6464;
 }
 
@@ -57,7 +56,7 @@ div.transarrow::after {
   width: 16px;
   height: 16px;
   margin-left: -8px;
-  margin-top: 215px;
+  margin-top: 165px;
   border-left: 4px solid #ff6464;
   border-bottom: 4px solid #ff6464;
   transform: rotate(-45deg);
@@ -228,11 +227,6 @@ div.transarrow::after {
   .footer__social {
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-     text-align: left;
-     flex-basis: 100%;
-     flex-shrink: 0;
-     flex-grow: 1;*/
   }
   .footer__copyright {
     margin-top: 30px;
@@ -241,7 +235,7 @@ div.transarrow::after {
 
 /*
  **************************************
-	ABOUT - o nás
+	ABOUT - HP
  **************************************
 */
 .about {
@@ -255,11 +249,111 @@ div.transarrow::after {
 
 /*
  **************************************
+	O FIRME
+ **************************************
+*/
+.company h2 {
+  text-align: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  color: #333;
+  font-size: 40px;
+  margin: 30px 60px;
+}
+.company p {
+  text-align: center;
+  font: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+}
+
+.article4 {
+  padding: 4em;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  border-radius: 0;
+  background-color: rgb(40, 40, 40);
+  color: #FFF;
+  color: hsl(0deg, 0%, 90%);
+  margin: 20px;
+}
+.article4 h2 {
+  color: #FFF;
+}
+.article4 a {
+  color: #ff6464;
+  padding: 10px;
+}
+
+/*
+ **************************************
 	OTEVENE POZICE
  **************************************
 */
 .about {
   background-image: url(/Images/mrizka-cut.png);
+}
+.about h2 {
+  text-align: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  color: #333;
+  font-size: 40px;
+  margin: 30px 60px;
+}
+.about p {
+  text-align: center;
+  font: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+}
+
+.positions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 1;
+}
+
+.article {
+  display: block;
+  text-align: center;
+  padding: 1.5em;
+  background-color: white;
+  border-radius: 2em;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+.article a {
+  color: #ff3333;
+  text-decoration: underline;
+}
+.article underline {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  top: 0em;
+  width: 50px;
+  height: 5px;
+  background-color: #ff0000;
+}
+
+li {
+  list-style: none;
+  font: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+}
+
+.offers {
+  display: block;
+  text-align: center;
+  padding: 1.5em;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*

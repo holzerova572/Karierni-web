@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Karierni web",
   "main": "index.js",
- 
   "scripts": {
     "build": "npx @11ty/eleventy",
     "serve": "npx @11ty/eleventy --serve"
@@ -13,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2"
   }
 }

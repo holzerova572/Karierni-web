@@ -448,10 +448,89 @@ li {
 	JAK FUNGUJEME
  **************************************
 */
-.about {
+.work {
     background-image: url(/Images/mrizka-cut.png);
     
-}
+    h2 {
+        text-align: center;
+        font-family: $font;
+        font-weight: bold;
+        color: $cerna;
+        font-size: 40px;
+        margin: 30px 60px; 
+        
+    }
+
+    h3 {
+        text-align: left;
+        font-family: $font;
+        color: $cerna;
+        font-size: 30px;
+        margin: 30px 60px;
+    }
+    p {
+        font: $font;
+        font-size: $font-size;
+        } 
+
+     
+    }
+
+    
+
+    .interview {
+        
+        padding: 4em;
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+        border-radius: 0;
+        background-color: rgb(40, 40, 40);
+        color: $bila;
+        color: hsl(0, 0%, 90%);
+        margin: $spacer;
+
+    & interview2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        color: $bila;
+    }
+
+     
+    a {
+    color: $cervena;
+    padding: 10px;
+
+    }
+    }
+    .interview-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    @media screen and (min-width: 640px) {
+
+    }
+
+
+    @media screen and (min-width: 1100px) { 
+
+        .interview-image {
+    
+            /*text-align: center;
+            margin: 20px auto;
+            width: 75%;*/
+            
+            
+        } 
+        
+
+    }
+    
 
 /*
  **************************************
